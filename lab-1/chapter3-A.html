@@ -1,0 +1,32 @@
+<!-- This is the view for Chapter 3 - Branch A -->
+<html>
+<head>
+<title> Interactive Game </title>
+<link rel="icon" href="assets/logo.png" />
+<script>
+    function inputController(){
+    if (input1.value == 'password'){
+    parent.location='win.html';
+    }
+    else{
+    parent.location='lose.html';
+    }
+    }
+    </script>
+    
+
+</head>
+<body>
+<h1>Chapter 3: User Input - Text-type & Script tag</h1>
+<p>
+This riddle uses a text-type input. The answer is <code>password</code>.
+The clues for this riddle might have appeared in previous scenes of the story.
+</p>
+<div>
+<label>Input Answer:</label>
+<input type="text" id='input1'>
+<input type="button" value='Submit' onClick="inputController()">
+</div>
+
+</body>
+</html>

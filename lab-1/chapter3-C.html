@@ -1,0 +1,40 @@
+<!-- This is the view for chapter3-C -->
+<html>
+<head>
+<title> Interactive Story </title>
+<link rel="icon" href="assets/logo.png" />
+<script>
+    function inputController(){
+    if (option1.checked && option3.checked){
+    parent.location='win.html';
+    }
+    else{
+    parent.location='lose.html';
+    }
+    }
+    </script>
+    
+</head>
+<body>
+<h1>Chapter 3: User Input - Checkbox-type & Script tag</h1>
+<p>
+This riddle uses checkbox-type input. The answer is <code>option 1</code> and <code>option 3</code>
+The clues for this riddle might have appeared in previous scenes of the story.
+</p>
+<div>
+<label>Select:</label>
+<br>
+<input type="checkbox" id='option1' name='input-name' value='option1'>
+<label>option 1</label>
+<br>
+<input type="checkbox" id='option2' name='input-name' value='option2'>
+<label>option 2</label>
+<br>
+<input type="checkbox" id='option3' name='input-name' value='option3'>
+<label>option 3</label>
+<br>
+<input type="button" onClick="inputController()" value='Submit'>
+</div>
+
+</body>
+</html>
